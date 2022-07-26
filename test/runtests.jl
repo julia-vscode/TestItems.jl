@@ -3,10 +3,10 @@ using Test
 
 @testset "TestItems" begin
 
-x = @testitem "Name of the test item" begin
-    
-end
+    x = @testitem "Name of the test item" begin
 
-@test x == nothing
+    end
+
+    @test x == nothing
 
 end
