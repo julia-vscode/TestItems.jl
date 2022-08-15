@@ -6,4 +6,4 @@
 
 ## Overview
 
-This package provides the `@testitem` macro for the test runner feature in VS Code.
+This package provides the `@testitem` macro for the test runner feature in VS Code. Please look at https://github.com/julia-vscode/TestItemRunner.jl for the documentation for this package here.
