@@ -9,7 +9,7 @@ using Test
 
     @test x === nothing
 
-    x = @testsetup TestSetup begin
+    x = @testsetup module TestSetup begin
         const x = 10
         getfloat() = rand()
     end
