@@ -7,6 +7,12 @@ using Test
 
     end
 
-    @test x == nothing
+    @test x === nothing
+
+    x = @testsetup module TestSetup begin
+        const x = 10
+        getfloat() = rand()
+    end
+    @test x === nothing
 
 end
