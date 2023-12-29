@@ -10,8 +10,8 @@ using Test
     @test x === nothing
 
     x = @testsetup module TestSetup
-        const x = 10
-        getfloat() = rand()
+    const x = 10
+    getfloat() = rand()
     end
     @test x === nothing
 
