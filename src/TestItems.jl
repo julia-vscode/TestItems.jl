@@ -1,12 +1,16 @@
 module TestItems
 
-export @testitem, @testsetup
+export @testitem, @testmodule, @testsnippet
 
 macro testitem(ex...)
     return nothing
 end
 
-macro testsetup(ex...)
+macro testmodule(ex...)
+    return nothing
+end
+
+macro testsnippet(ex...)
     return nothing
 end
 
