@@ -4,15 +4,18 @@ using Test
 @testset "TestItems" begin
 
     x = @testitem "Name of the test item" begin
-
+        println("Hello world")
     end
-
     @test x === nothing
 
-    x = @testsetup module TestSetup
+    y = @testmodule Foo begin
         const x = 10
         getfloat() = rand()
     end
-    @test x === nothing
+    @test y === nothing
 
+    z = @testsnippet Bar begin
+        println("Hello world")
+    end
+    @test z ===nothing
 end
