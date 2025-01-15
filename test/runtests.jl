@@ -18,4 +18,10 @@ using Test
         println("Hello world")
     end
     @test z ===nothing
+
+    w = @testitem begin
+        error()
+        @ccall splork
+    end
+    @test w === nothing
 end
