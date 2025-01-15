@@ -17,7 +17,7 @@ using Test
     z = @testsnippet Bar begin
         println("Hello world")
     end
-    @test z ===nothing
+    @test z === nothing
 
     w = @testitem begin
         error()
